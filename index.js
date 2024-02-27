@@ -269,3 +269,257 @@
 // var voteable = (age < 18) ? "Too young" : "Old enough";
 
 // document.write(voteable);
+
+//Q11.
+
+// var i =0;
+// while(i<6){
+//     document.write("Hello World" + "<br>")
+//     i++
+// }
+
+//Q12.
+// var i =1;
+// while(i<11){
+//     document.write(i +"<br>")
+//     i++
+// }
+
+
+//Q13.
+// var num = parseInt(prompt("Enter a number to print its multiplication table: "))
+// var length = parseInt(prompt("Enter length of multiplication table: "))
+
+// document.write("Multiplication table of" +" "+ num + "<br>")
+// document.write("Length" + " " + length + "<br>")
+
+// for (var i=1; i<=length; i++){
+//         var result = num *i 
+//         document.write(num + "x"+ i + "="+ result + "<br>")
+// }
+
+//Q14.
+
+// var A = ["Nokia", "Samsung", "Apple", "Sony", "Huawei"]
+
+// for ( var i=0; i<A.length; i++){
+//     document.write(A[i] + "<br>")
+// }
+
+//Q15.
+
+// var fruits =["apple","banana", "mango","orange","strawberry"]
+// var length = fruits.length
+
+// for (i=0; i<length; i++){
+//     document.write(fruits[i] + "<br>")
+// }
+// document.write("<br>")
+
+// for (i=0; i<length; i++){
+//     document.write("Element at index" + " " + i + " "+ "is" + " " + fruits[i] + "<br>")
+// }
+
+
+//Q16.
+
+// var numItems = parseInt(prompt("Enter number of items: "))
+// var items = []
+// for (var i=0; i <numItems; i++){
+//     var value = prompt("Enter value at index" + " "+ i + ":" )
+//     items.push(value)
+// }
+
+// document.write("Number of items:" + numItems + "<br>")
+// document.write("Items: " + "<br>" + "<br>" )
+
+// for (var i=0; i<numItems;i++){
+//     document.write(items[i] + "<br>")
+// }
+
+
+//Q17.
+// a. Counting: 1, 2, 3, ..., 15
+
+// document.write("a. Counting: ");
+// var count = 1;
+// while (count <= 15) {
+//     document.write(count + ", ");
+//     count++;
+// }
+// document.write("<br>");
+
+// b. Reverse counting: 10, 9, ..., 1
+
+// document.write("b. Reverse counting: ");
+// var reverseCount = 10;
+// while (reverseCount >= 1) {
+//     document.write(reverseCount + ", ");
+//     reverseCount--;
+// }
+// document.write("<br>");
+
+// c. Even: 0, 2, 4, ..., 20
+
+// document.write("c. Even: ");
+// var even = 0;
+// while (even <= 20) {
+//     document.write(even + ", ");
+//     even += 2;
+// }
+// document.write("<br>");
+
+// d. Odd: 1, 3, 5, ..., 19
+
+// document.write("d. Odd: ");
+// var odd = 1;
+// while (odd <= 19) {
+//     document.write(odd + ", ");
+//     odd += 2;
+// }
+// document.write("<br>");
+
+// e. Series: 2k, 4k, ..., 20k
+
+// document.write("e. Series: ");
+// var series = 2;
+// while (series <= 20) {
+//     document.write(series + "k, ");
+//     series += 2;
+// }
+
+//Q18.
+// var A = ["cake", "apple pie", "cookie", "chips", "patties"];
+
+// function searchItem(item) {
+//     item = item.toLowerCase();
+
+//     var found = false;
+
+//     while (!found && i < A.length) {
+//         if (A[i] === item) {
+//             found = true;
+//         }
+//         i++;
+//     }
+
+//     if (found) {
+//         alert("Yes, '" + item + "' is found at index " + i + "in our bakery");
+//     } else {
+//         alert("No, '" + item + "' is not found in the list.");
+//     }
+// }
+
+// var userInput = prompt("Enter an item to search:");
+
+// searchItem(userInput);
+
+//Q20
+
+// var scores = [12, 45, 3, 22, 34, 50];
+// var stopValue = parseInt(prompt("Enter the stop value:"));
+
+// for (var i = 0; i < scores.length; i++) {
+//     document.write(scores[i] + " ,");
+    
+//     if (scores[i] === stopValue) {
+//         break; 
+//     }
+// }
+
+//Q21.
+
+// var A = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+
+// for (var i = 0; i < A.length; i++) {
+//     var row = ""; 
+    
+    
+//     for (var j = 0; j < A[i].length; j++) {
+//         row += A[i][j]; 
+//         if (j !== A[i].length - 1) {
+//             row += " "; 
+//         }
+//     }
+    
+//    document.write(row + "<br>"); 
+// }
+
+//Q22.
+
+// var num = parseFloat(prompt("Enter a number:"));
+
+// while (num >= 0) {
+//     document.write(num + "<br>"); 
+//     num -= 0.5; 
+// }
+
+//Q23.
+
+// var i = 0;
+
+// while (i <= 20) {
+//     if (i % 2 === 0) {
+//         document.write(i + " is even" + "<br>");
+//     } else {
+//         document.write(i + " is odd" + "<br>");
+//     }
+//     i++;
+// }
+
+
+//Q24.
+
+// var product = 1;
+// for (var i = 1; i <= 7; i += 2) {
+//     product *= i; 
+// }
+
+// document.write("The product of the odd integers from 1 to 7 is: " + product);
+
+
+//Q25.
+
+// var initialStars = parseInt(prompt("Enter the initial number of stars:"));
+// var stars = initialStars;
+
+// while (stars > 0) {
+//     var line = "";
+//     for (var i = 0; i < stars; i++) {
+//         line += "*";
+//     }
+//     document.write(line + "<br>"); 
+//     stars--; 
+// }
+
+
+//Q26.
+
+// var numLines = parseInt(prompt("Enter the number of lines:"));
+
+// //(A)
+// document.write("<h3>Pattern A:</h3>");
+// for (var i = 0; i < numLines; i++) {
+//     for (var j = 0; j < 5; j++) {
+//         document.write("*");
+//     }
+//     document.write("<br>");
+// }
+
+// //(B)
+// document.write("<h3>Pattern B:</h3>");
+// for (var i = 1; i <= numLines; i++) {
+//     for (var j = 1; j <= i; j++) {
+//         document.write("*");
+//     }
+//     document.write("<br>");
+// }
+
+// // (C)
+// document.write("<h3>Pattern C:</h3>");
+// for (var i = numLines; i >= 1; i--) {
+//     for (var j = 0; j < i; j++) {
+//         document.write("*");
+//     }
+//     document.write("<br>");
+// }
